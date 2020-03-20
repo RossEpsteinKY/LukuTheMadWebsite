@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Alice in Wonderland';
+    src: url('AliceinWonderland.woff2') format('woff2'),
+        url('AliceinWonderland.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FairydustB';
+    src: url('FairydustB.woff2') format('woff2'),
+        url('FairydustB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ringbearer';
+    src: url('RingbearerMedium.woff2') format('woff2'),
+        url('RingbearerMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fairy Strange';
+    src: url('FairyStrange.woff2') format('woff2'),
+        url('FairyStrange.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Norse';
+    src: url('Norse.woff2') format('woff2'),
+        url('Norse.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Norse';
+    src: url('Norse-Bold.woff2') format('woff2'),
+        url('Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
