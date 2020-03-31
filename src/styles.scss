@@ -2,7 +2,7 @@
 body {
   padding-top: 5%;
   padding-left: 2%;
-  background-color: rgba(167, 176, 168, 0.7) !important;
+  background-color: rgba(0, 0, 0, 0.21) !important;
   //background-image: url("./assets/images/bg/parchment.jpg");
 }
 
@@ -10,3 +10,20 @@ body {
   //background-image: url("./assets/images/bg/parchment.jpg");
 
 }
+
+.bg-img
+{
+  background-image: url('./assets/images/bg/parchment-bg.png');
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.h1  {
+  color: #000000;
+  font-family: Ringbearer;
+  font-size: 3.5em !important;
+}
+
+
