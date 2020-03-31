@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { MerchComponent } from './merch/merch.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import { MediaComponent } from './media/media.component';
+import { GalleryComponent } from './media/gallery/gallery.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { MediaComponent } from './media/media.component';
     HomeComponent,
     MerchComponent,
     MediaComponent,
+    GalleryComponent,
   ],
   imports: [
     BrowserModule,
