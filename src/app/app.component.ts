@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {faFontAwesome} from "@fortawesome/free-brands-svg-icons";
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,8 @@ import {Component, OnInit} from '@angular/core';
 export class AppComponent implements OnInit {
   title = 'LukuSiteAngular';
 
-    ngOnInit() {
+  fa = faFontAwesome;
+  ngOnInit() {
 
       document.body.classList.add('bg-img');
 

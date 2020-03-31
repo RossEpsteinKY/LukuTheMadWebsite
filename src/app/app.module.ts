@@ -6,17 +6,22 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { MerchComponent } from './merch/merch.component';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    MerchComponent
+    MerchComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule,
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
