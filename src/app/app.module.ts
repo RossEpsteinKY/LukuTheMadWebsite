@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { MerchComponent } from './merch/merch.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import { MediaComponent } from './media/media.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
     NavbarComponent,
     HomeComponent,
     MerchComponent,
+    MediaComponent,
   ],
   imports: [
     BrowserModule,
