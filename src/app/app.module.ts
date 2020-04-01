@@ -11,6 +11,7 @@ import { MediaComponent } from './media/media.component';
 import { GalleryComponent } from './media/gallery/gallery.component';
 import {CrystalLightboxModule} from "@crystalui/angular-lightbox";
 import { BioComponent } from './bio/bio.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { BioComponent } from './bio/bio.component';
     MediaComponent,
     GalleryComponent,
     BioComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
