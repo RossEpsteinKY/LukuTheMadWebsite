@@ -9,6 +9,7 @@ import { MerchComponent } from './merch/merch.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import { MediaComponent } from './media/media.component';
 import { GalleryComponent } from './media/gallery/gallery.component';
+import {CrystalLightboxModule} from "@crystalui/angular-lightbox";
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { GalleryComponent } from './media/gallery/gallery.component';
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
+    CrystalLightboxModule
 
 
   ],
