@@ -7,14 +7,10 @@
     </div>
   </div>
 
-  <div class="row">
+  <div class="row pb-5">
 
-    <div class="col pt-3">
-
-
-
-
-      <span class="image-container"*ngFor="let image of activeGallery">
+    <div class="col pt-3" >
+      <span class="image-container" *ngFor="let image of activeGallery">
         <img  src="{{image.url}}" alt="{{galleryName}}" class="gallery-image">
       </span>
       </div>
