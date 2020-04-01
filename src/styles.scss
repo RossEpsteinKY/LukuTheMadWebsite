@@ -50,3 +50,25 @@ body {
 }
 
 
+.luku-text-link a {
+  font-family: "Ringbearer";
+  font-size: 1.6em;
+  text-decoration: none;
+  text-shadow: 0px 0px 2px black;
+  color: #0018a7;
+  //text-shadow: 0px 0px 3px rgb(238, 250, 255);
+
+}
+
+.luku-text-link a:hover {
+  font-family: "Ringbearer";
+  font-size: 1.7em;
+  text-decoration: none;
+  text-shadow: 0px 0px 4px black;
+  color: #0020ff;
+  //text-shadow: 0px 0px 3px rgb(238, 250, 255);
+
+}
+
+
+
