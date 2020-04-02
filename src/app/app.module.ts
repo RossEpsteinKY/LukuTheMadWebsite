@@ -12,6 +12,9 @@ import { GalleryComponent } from './media/gallery/gallery.component';
 import {CrystalLightboxModule} from "@crystalui/angular-lightbox";
 import { BioComponent } from './bio/bio.component';
 import { ContactComponent } from './contact/contact.component';
+import { EventsComponent } from './events/events.component';
+
+
 
 
 @NgModule({
@@ -24,12 +27,16 @@ import { ContactComponent } from './contact/contact.component';
     GalleryComponent,
     BioComponent,
     ContactComponent,
+    EventsComponent,
+
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    CrystalLightboxModule
+    CrystalLightboxModule,
+
 
 
   ],

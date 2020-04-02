@@ -6,6 +6,7 @@ import {MediaComponent} from "./media/media.component";
 import {GalleryComponent} from "./media/gallery/gallery.component";
 import {BioComponent} from "./bio/bio.component";
 import {ContactComponent} from "./contact/contact.component";
+import {EventsComponent} from "./events/events.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'media/gallery/:name', component: GalleryComponent},
   { path: 'bio', component: BioComponent},
   { path: 'contact', component: ContactComponent},
+  { path: 'events', component: EventsComponent},
 
 ];
 
