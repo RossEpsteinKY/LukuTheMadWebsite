@@ -13,6 +13,7 @@ import {CrystalLightboxModule} from "@crystalui/angular-lightbox";
 import { BioComponent } from './bio/bio.component';
 import { ContactComponent } from './contact/contact.component';
 import { EventsComponent } from './events/events.component';
+import { PresskitComponent } from './presskit/presskit.component';
 
 
 
@@ -29,6 +30,7 @@ import { EventsComponent } from './events/events.component';
     BioComponent,
     ContactComponent,
     EventsComponent,
+    PresskitComponent,
 
 
   ],
