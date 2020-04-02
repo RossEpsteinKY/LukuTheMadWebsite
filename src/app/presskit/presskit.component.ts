@@ -25,6 +25,9 @@ export class PresskitComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
+
+
   }
 
 }

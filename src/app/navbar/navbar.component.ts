@@ -9,7 +9,23 @@ export class NavbarComponent implements OnInit {
 
   constructor() { }
 
+  public innerWidth;
+
+  public isMobile = false;
+
+  public isMenuCollapsed = true;
+
+
   ngOnInit() {
+
+    this.innerWidth = window.innerWidth;
+
+
+    if (this.innerWidth <= 1140) {
+      this.isMobile = true;
+    }
+
+
   }
 
 }

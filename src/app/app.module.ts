@@ -14,6 +14,7 @@ import { BioComponent } from './bio/bio.component';
 import { ContactComponent } from './contact/contact.component';
 import { EventsComponent } from './events/events.component';
 import { PresskitComponent } from './presskit/presskit.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -31,15 +32,13 @@ import { PresskitComponent } from './presskit/presskit.component';
     ContactComponent,
     EventsComponent,
     PresskitComponent,
-
-
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
     CrystalLightboxModule,
-
+    NgbModule
 
 
   ],
