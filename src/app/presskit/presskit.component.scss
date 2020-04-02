@@ -8,8 +8,8 @@
 }
 
 .promo-thumb{
-  width: 400px;
-  height: 400px;
+  width: 25%;
+  height: 25%;
   margin-top: 5px;
   -webkit-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.75);
@@ -21,7 +21,11 @@
 .image-container{
 
 
-
   padding: 5px;
+
+}
+
+.col {
+  text-align: center;
 
 }
