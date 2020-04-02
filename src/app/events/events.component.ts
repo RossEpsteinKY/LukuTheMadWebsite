@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {} from 'angular-bands-in-town'
+
 
 @Component({
   selector: 'app-events',
