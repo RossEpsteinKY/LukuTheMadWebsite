@@ -15,6 +15,7 @@ import { ContactComponent } from './contact/contact.component';
 import { EventsComponent } from './events/events.component';
 import { PresskitComponent } from './presskit/presskit.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {MobileDetectService} from "./MobileDetectService";
 
 
 
@@ -32,17 +33,19 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     ContactComponent,
     EventsComponent,
     PresskitComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
     CrystalLightboxModule,
-    NgbModule
+    NgbModule,
+
 
 
   ],
-  providers: [],
+  providers: [MobileDetectService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

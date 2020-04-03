@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {ActivatedRoute} from "@angular/router";
+import {AppComponent} from "../app.component";
+import {MobileDetectService} from "../MobileDetectService";
 
 @Component({
   selector: 'app-navbar',
@@ -7,24 +10,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(public mobileCheck: MobileDetectService) { }
 
   public innerWidth;
 
-  public isMobile = false;
+  public isMobile;
 
   public isMenuCollapsed = true;
 
 
+
   ngOnInit() {
 
-    this.innerWidth = window.innerWidth;
 
+    this.isMobile = this.mobileCheck.mobileCheck();
 
-    if (this.innerWidth <= 1140) {
-      this.isMobile = true;
-    }
+    console.log('testing', this.isMobile);
 
+    //
+    // this.innerWidth = window.innerWidth;
+    //
+    //
+    // if (this.innerWidth <= 1140) {
+    //   this.isMobile = true;
+    // }
+    //
 
   }
 

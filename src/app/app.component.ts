@@ -10,21 +10,12 @@ import {isBoolean} from "util";
 export class AppComponent implements OnInit {
   title = 'LukuSiteAngular';
 
-  public isMobile = false;
 
-  public innerWidth;
 
   fa = faFontAwesome;
   ngOnInit() {
 
       document.body.classList.add('bg-img');
-
-      this.innerWidth = window.innerWidth;
-
-
-      if (this.innerWidth <= 1024) {
-        this.isMobile = true;
-      }
 
 
 
