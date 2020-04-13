@@ -1,0 +1,21 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t repsteinky/lukuthemad -f Dockerfile.dev .
+
+script:
+  - docker run -e CI=true repsteinky/lukuthemad npm run test
+
+#deploy:
+#  provider: elasticbeanstalk
+#  region: "us-east-2"
+#  app: "docker-react-app"
+#  env: "DockerReactApp-env"
+#  bucket_name: "elasticbeanstalk-us-east-2-907593648697"
+#  bucket_path: "docker-react-app"
+#  on:
+#    branch: master
+#  access_key_id: $AWS_ACCESS_KEY
+#  secret_access_key: $AWS_SECRET_KEY
