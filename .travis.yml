@@ -1,20 +1,41 @@
+language: node.js
 sudo: required
-services:
-  - docker
+dist: trusty
 
-before_install:
-  - docker build -t repsteinky/lukuthemad -f Dockerfile.dev .
+branches:
+  only:
+    - master
+
+#services:
+#  - docker
+
+before_script:
+  - export CHROME_BIN=/usr/bin/google-chrome
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
+  - sudo apt-get update
+  - sudo apt-get install -y libappindicator1 fonts-liberation
+  - wget https://dl.google.com/linux/direct/google-chrome-stable-current_amd64.deb
+  - sudo dpkg -i google-chrome*.deb
 
 script:
-  - docker run -e CI=true repsteinky/lukuthemad npm run test
+  #  - docker run -e CI=true repsteinky/lukuthemad npm run test
+  - ng test --watch false -cc
+  - npm run e2e
+  - ng build -bh "https://github.com/RossEpsteinKY/LukuTheMadWebsite.git"
+
+#before_install:
+#  - docker build -t repsteinky/lukuthemad -f Dockerfile.dev .
+
+
 
 deploy:
   provider: elasticbeanstalk
   region: "us-east-2"
-  app: "LukuAngularSite"
+  app: "LukuWebsite"
   env: "Lukuangularsite-env"
   bucket_name: "elasticbeanstalk-us-east-2-907593648697"
-  bucket_path: "docker-react-app"
+  bucket_path: "lukusitebucket"
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
