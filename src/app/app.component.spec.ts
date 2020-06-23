@@ -15,7 +15,9 @@ describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule,
+        RouterTestingModule
+      ],
+      declarations: [
         AppComponent,
         NavbarComponent,
         HomeComponent,
@@ -26,9 +28,6 @@ describe('AppComponent', () => {
         ContactComponent,
         EventsComponent,
         PresskitComponent,
-      ],
-      declarations: [
-        AppComponent
       ],
     }).compileComponents();
   }));
