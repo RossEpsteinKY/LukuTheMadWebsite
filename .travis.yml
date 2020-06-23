@@ -6,13 +6,13 @@ before_install:
   - docker build -t repsteinky/lukuthemad -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true repsteinky/lukuthemad npm run test --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
+  - docker run -e CI=true repsteinky/lukuthemad npm run test
 
 deploy:
   provider: elasticbeanstalk
   region: "us-east-2"
-  app: "docker-react-app"
-  env: "DockerReactApp-env"
+  app: "LukuAngularSite"
+  env: "Lukuangularsite-env"
   bucket_name: "elasticbeanstalk-us-east-2-907593648697"
   bucket_path: "docker-react-app"
   on:
