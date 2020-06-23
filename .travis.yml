@@ -15,8 +15,6 @@ before_script:
   - npm install -g @angular/cli
 
 script:
-  - ng test --watch false --browsers ChromeHeadless
-  - ng e2e --protractor-config='e2e/protractor.ci.conf.js'
   - yarn build --prod --base-href $base_href
 
 
