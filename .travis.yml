@@ -74,4 +74,5 @@ deploy:
   token:
     secure: $FIREBASE_TOKEN
 #  local_dir: dist/LukuSiteAngular
+  project: lukusite
   local_dir: dist
