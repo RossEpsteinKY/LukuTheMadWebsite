@@ -15,8 +15,6 @@ before_script:
   - npm install -g @angular/cli
 
 script:
-  - ng test --watch false --browsers ChromeHeadless
-  - ng e2e --protractor-config='e2e/protractor.ci.conf.js'
   - yarn build --prod --base-href $base_href
 
 
@@ -42,10 +40,24 @@ script:
 #  provider: elasticbeanstalk
 #  region: "us-east-2"
 #  app: "LukuWebsite"
-#  env: "LukuWebsiteEnv"
+#  env: "LukuSiteEnv"
 #  bucket_name: "elasticbeanstalk-us-east-2-907593648697"
-#  bucket_path: "lukusitebucket"
+#  bucket_path: "lukuwebsitebucket"
 #  on:
 #    branch: master
 #  access_key_id: $AWS_ACCESS_KEY
 #  secret_access_key: $AWS_SECRET_KEY
+
+deploy:
+  provider: s3
+  region: "us-east-2"
+  app: "LukuWebsite"
+  env: "LukuSiteEnv"
+  bucket_name: "lukuwebsitebucket"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
+  skip_cleanup: true
+  acl: public_read
+
