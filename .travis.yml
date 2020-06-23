@@ -53,7 +53,7 @@ deploy:
   region: "us-east-2"
 #  app: "LukuWebsite"
 #  env: "LukuSiteEnv"
-  bucket_name: "lukuwebsitebucket"
+  bucket: "lukuwebsitebucket"
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
