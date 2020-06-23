@@ -1,15 +1,44 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import {NavbarComponent} from './navbar/navbar.component';
+import {HomeComponent} from './home/home.component';
+import {MerchComponent} from './merch/merch.component';
+import {MediaComponent} from './media/media.component';
+import {GalleryComponent} from './media/gallery/gallery.component';
+import {BioComponent} from './bio/bio.component';
+import {ContactComponent} from './contact/contact.component';
+import {EventsComponent} from './events/events.component';
+import {PresskitComponent} from './presskit/presskit.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
+        AppComponent,
+        NavbarComponent,
+        HomeComponent,
+        MerchComponent,
+        MediaComponent,
+        GalleryComponent,
+        BioComponent,
+        ContactComponent,
+        EventsComponent,
+        PresskitComponent,
       ],
       declarations: [
-        AppComponent
+        RouterTestingModule,
+        AppComponent,
+        NavbarComponent,
+        HomeComponent,
+        MerchComponent,
+        MediaComponent,
+        GalleryComponent,
+        BioComponent,
+        ContactComponent,
+        EventsComponent,
+        PresskitComponent,
       ],
     }).compileComponents();
   }));

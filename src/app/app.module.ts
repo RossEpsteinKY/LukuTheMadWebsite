@@ -31,8 +31,6 @@ import { PresskitComponent } from './presskit/presskit.component';
     ContactComponent,
     EventsComponent,
     PresskitComponent,
-
-
   ],
   imports: [
     BrowserModule,
