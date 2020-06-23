@@ -35,10 +35,14 @@ export class MerchComponent implements OnInit {
       applemusic: 'https://music.apple.com/us/album/were-all-going-to-helheim/1503931963?uo=4&app=music&at=1001lry3&ct=dashboard',
       iheart: 'https://www.iheart.com/artist/id-34164718/albums/id-97236389',
     },
-    // {name: "Ragnarokin Out (Coming Soon)",
-    //   img: '../../assets/images/albumart/ragnarokin.png',
-    //   itunes: 'https://music.apple.com/us/album/songs-from-the-briarwood/1502365122?uo=4&app=itunes&at=1001lry3&ct=dashboard'
-    // },
+    {name: "Ragnarokin Out",
+      img: '../../assets/images/albumart/ragnarokin.png',
+      itunes: 'https://music.apple.com/us/album/ragnarokin-out/1515476769?uo=4&app=itunes&at=1001lry3&ct=dashboard',
+      googleplay: 'https://play.google.com/store/music/album/Luku_the_Mad_Skald_Ragnarokin_Out?id=Bx4bnr6gj7aspmpmawnr5cau5hm',
+      spotify: 'https://open.spotify.com/album/741eKAWcrPen9KGJU9xasp',
+      applemusic: 'https://music.apple.com/us/album/ragnarokin-out/1515476769?uo=4&app=music&at=1001lry3&ct=dashboard',
+      iheart: 'https://www.iheart.com/artist/id-34164718/albums/id-103128945',
+    },
   ]
 
   ngOnInit() {
