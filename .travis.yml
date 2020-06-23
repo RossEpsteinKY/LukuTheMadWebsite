@@ -56,6 +56,7 @@ deploy:
   bucket: "lukuwebsitebucket"
   on:
     branch: master
+  local_dir: dist/LukuSiteAngular
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
   skip_cleanup: true
