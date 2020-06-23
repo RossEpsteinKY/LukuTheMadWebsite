@@ -10,14 +10,14 @@ import {EventsComponent} from "./events/events.component";
 import {PresskitComponent} from "./presskit/presskit.component";
 
 const routes: Routes = [
-  { path: '/', component: HomeComponent},
-  { path: '/merch', component: MerchComponent},
-  { path: '/media', component: MediaComponent},
-  { path: '/media/gallery/:name', component: GalleryComponent},
-  { path: '/bio', component: BioComponent},
-  { path: '/contact', component: ContactComponent},
-  { path: '/events', component: EventsComponent},
-  { path: '/presskit', component: PresskitComponent},
+  { path: '', component: HomeComponent},
+  { path: 'merch', component: MerchComponent},
+  { path: 'media', component: MediaComponent},
+  { path: 'media/gallery/:name', component: GalleryComponent},
+  { path: 'bio', component: BioComponent},
+  { path: 'contact', component: ContactComponent},
+  { path: 'events', component: EventsComponent},
+  { path: 'presskit', component: PresskitComponent},
 
 ];
 
