@@ -69,10 +69,14 @@ script:
 #  skip_cleanup: true
 #  acl: public_read
 
-deploy:
-  provider: firebase
-  token:
-    secure: $FIREBASE_TOKEN
-#  local_dir: dist/LukuSiteAngular
-  project: lukusite
-  local_dir: dist
+#deploy:
+#  provider: firebase
+#  token:
+#    secure: $FIREBASE_TOKEN
+##  local_dir: dist/LukuSiteAngular
+#  project: lukusite
+#  local_dir: dist
+
+after_success:
+  - firebase use --token $FIREBASE_TOKEN FIREBASE_ID
+  - firebase --non-interactive --token $FIREBASE_TOKEN
