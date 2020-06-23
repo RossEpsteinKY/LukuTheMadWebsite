@@ -28,17 +28,7 @@ describe('AppComponent', () => {
         PresskitComponent,
       ],
       declarations: [
-        RouterTestingModule,
-        AppComponent,
-        NavbarComponent,
-        HomeComponent,
-        MerchComponent,
-        MediaComponent,
-        GalleryComponent,
-        BioComponent,
-        ContactComponent,
-        EventsComponent,
-        PresskitComponent,
+        AppComponent
       ],
     }).compileComponents();
   }));
