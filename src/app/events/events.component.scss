@@ -1,0 +1,12 @@
+.mobile-events{display: none}
+.desktop-events{display: block}
+@media only screen and (max-width: 900px) {
+  /* For tablets: */
+
+  .mobile-pad{padding-top: 100px;}
+  .mobile-events{display: block}
+  .desktop-events{display: none}
+
+
+
+}
