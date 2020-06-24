@@ -8,10 +8,27 @@
   object-fit: cover;
 }
 
+.mobile-gallery{display: none}
+.desktop-gallery{display: block}
+
 .image-container{
 
 
 
   padding: 5px;
+
+}
+
+@media only screen and (max-width: 900px) {
+
+  .gallery-image{
+    width: 100%;
+  }
+  .desktop-gallery{display: none}
+
+  .mobile-gallery{
+    display: block;
+
+  }
 
 }
