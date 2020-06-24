@@ -16,6 +16,7 @@ before_script:
 
 script:
   - yarn build --prod --base-href $base_href
+  - firebase deploy --only hosting,functions --token $FIREBASE_TOKEN
 
 
 ##services:
@@ -77,9 +78,4 @@ script:
 #  project: lukusite
 #  local_dir: dist
 
-after_success:
-  - script:
-      - yarn build --prod --base-href $base_href
-      #    - firebase use --token $FIREBASE_TOKEN $FIREBASE_ID
-      #    - firebase --non-interactive --token $FIREBASE_TOKEN
-      - firebase deploy --only hosting,functions --token $FIREBASE_TOKEN
+
