@@ -3,4 +3,32 @@
   float: right;
   margin-right: 40px;
   border-radius: 100px;
+
 }
+
+.luku-text{
+  font-size: 1.4em;
+}
+
+@media only screen and (max-width: 900px) {
+  /* For tablets: */
+
+
+
+  .mobile-pad{padding-top: 100px;}
+
+  .bio-img{
+    max-width: 50%;
+    margin-left: auto;
+    border-radius: 100px;
+
+  }
+
+  .h3{
+    font-size: 1.7em !important;
+    text-align: center !important;
+    padding-bottom: 10px;
+    font-weight: bold;
+  }
+}
+
