@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: 'media/gallery/:name', component: GalleryComponent},
   { path: 'bio', component: BioComponent},
   { path: 'contact', component: ContactComponent},
-  { path: 'events', component: EventsComponent},
+  { path: 'eventspage', component: EventsComponent},
   { path: 'presskit', component: PresskitComponent},
 
 ];
