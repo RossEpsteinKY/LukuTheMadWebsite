@@ -16,8 +16,13 @@ before_script:
 
 script:
   - yarn build --prod --base-href $base_href
-  - firebase deploy --only hosting,functions --token $FIREBASE_TOKEN
+#  - firebase deploy --only hosting,functions --token $FIREBASE_TOKEN
 
+deploy:
+  skip_cleanup: true
+  provider: firebase
+  token:
+    $FIREBASE_TOKEN
 
 ##services:
 ##  - docker
