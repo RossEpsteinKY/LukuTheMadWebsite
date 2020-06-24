@@ -13,16 +13,9 @@ branches:
 
 before_script:
   - npm install -g @angular/cli
-  - npm install firebase-tools -g
 
-
-
-after_success:
-  - script:
-    - yarn build --prod --base-href $base_href
-    - firebase use --token $FIREBASE_TOKEN FIREBASE_ID
-    - firebase --non-interactive --token $FIREBASE_TOKEN
-
+script:
+  - yarn build --prod --base-href $base_href
 
 
 ##services:
@@ -83,3 +76,10 @@ after_success:
 ##  local_dir: dist/LukuSiteAngular
 #  project: lukusite
 #  local_dir: dist
+
+after_success:
+  - script:
+      - yarn build --prod --base-href $base_href
+      #    - firebase use --token $FIREBASE_TOKEN $FIREBASE_ID
+      #    - firebase --non-interactive --token $FIREBASE_TOKEN
+      - firebase deploy --only hosting,functions --token $FIREBASE_TOKEN
