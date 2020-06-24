@@ -16,13 +16,7 @@ before_script:
 
 script:
   - yarn build --prod --base-href $base_href
-#  - firebase deploy --only hosting,functions --token $FIREBASE_TOKEN
 
-deploy:
-  skip_cleanup: true
-  provider: firebase
-  token:
-    $FIREBASE_TOKEN
 
 ##services:
 ##  - docker
@@ -83,4 +77,6 @@ deploy:
 #  project: lukusite
 #  local_dir: dist
 
-
+after_success:
+  - firebase use --token $FIREBASE_TOKEN FIREBASE_ID
+  - firebase --non-interactive --token $FIREBASE_TOKEN
