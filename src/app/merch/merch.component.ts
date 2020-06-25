@@ -34,6 +34,7 @@ export class MerchComponent implements OnInit {
       spotify: 'https://open.spotify.com/album/7r7OlhNgtVy3UxvFWnZJ7l',
       applemusic: 'https://music.apple.com/us/album/were-all-going-to-helheim/1503931963?uo=4&app=music&at=1001lry3&ct=dashboard',
       iheart: 'https://www.iheart.com/artist/id-34164718/albums/id-97236389',
+      shopify: 'https://8h2rolgxavkes0hp-41969647776.shopifypreview.com/products_preview?preview_key=8526f22e1a231201dd5aa2355765a271',
     },
     {name: "Ragnarokin Out",
       img: '../../assets/images/albumart/ragnarokin.png',
@@ -42,8 +43,9 @@ export class MerchComponent implements OnInit {
       spotify: 'https://open.spotify.com/album/741eKAWcrPen9KGJU9xasp',
       applemusic: 'https://music.apple.com/us/album/ragnarokin-out/1515476769?uo=4&app=music&at=1001lry3&ct=dashboard',
       iheart: 'https://www.iheart.com/artist/id-34164718/albums/id-103128945',
+
     },
-  ]
+  ];
 
   ngOnInit() {
   }
