@@ -16,6 +16,7 @@ export class MerchComponent implements OnInit {
       googleplay: 'https://play.google.com/store/music/album/Luku_the_Mad_Skald_Songs_from_the_Briarwood?id=Bpnuw4ixndwu5oq2upj37r6jwoa',
       spotify: 'https://open.spotify.com/album/2t4dez6tVU8WK3uzX66eIU',
       applemusic: 'https://music.apple.com/us/album/songs-from-the-briarwood/1502365122?uo=4&app=music&at=1001lry3&ct=dashboard',
+      shopify: 'https://luku-the-mads-store-2.myshopify.com/cart/34810468303008:1?channel=buy_button'
     },
 
     {name: 'From Under The Northern Lights',
@@ -25,6 +26,7 @@ export class MerchComponent implements OnInit {
       spotify: 'https://open.spotify.com/album/6Jg9Og4Hron4Rhj1Bps2tK',
       applemusic: 'https://music.apple.com/us/album/from-under-the-northern-lights/1503456053?uo=4&app=music&at=1001lry3&ct=dashboard',
       iheart: 'https://www.iheart.com/artist/id-34164718/albums/id-97000661',
+      shopify: 'https://luku-the-mads-store-2.myshopify.com/cart/34810478493856:1?channel=buy_button'
     },
 
     {name: "We're All Going To Helheim (EXPLICIT)",
@@ -34,7 +36,8 @@ export class MerchComponent implements OnInit {
       spotify: 'https://open.spotify.com/album/7r7OlhNgtVy3UxvFWnZJ7l',
       applemusic: 'https://music.apple.com/us/album/were-all-going-to-helheim/1503931963?uo=4&app=music&at=1001lry3&ct=dashboard',
       iheart: 'https://www.iheart.com/artist/id-34164718/albums/id-97236389',
-      shopify: 'https://8h2rolgxavkes0hp-41969647776.shopifypreview.com/products_preview?preview_key=8526f22e1a231201dd5aa2355765a271',
+      shopify: 'https://luku-the-mads-store-2.myshopify.com/cart/34809914654880:1?channel=buy_button',
+
     },
     {name: "Ragnarokin Out",
       img: '../../assets/images/albumart/ragnarokin.png',
