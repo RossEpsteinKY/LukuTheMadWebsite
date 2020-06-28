@@ -14,6 +14,7 @@ import { BioComponent } from './bio/bio.component';
 import { ContactComponent } from './contact/contact.component';
 import { EventsComponent } from './events/events.component';
 import { PresskitComponent } from './presskit/presskit.component';
+import { SonglistComponent } from './songlist/songlist.component';
 
 
 
@@ -31,6 +32,7 @@ import { PresskitComponent } from './presskit/presskit.component';
     ContactComponent,
     EventsComponent,
     PresskitComponent,
+    SonglistComponent,
   ],
   imports: [
     BrowserModule,
