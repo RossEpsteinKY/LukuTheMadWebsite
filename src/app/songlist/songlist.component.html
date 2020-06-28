@@ -15,7 +15,7 @@
     <div class="row">
       <div class="col">
 
-            <div class="song-list luku-text text-center" *ngFor="let song of cleanSongs">
+            <div class="song-list luku-text text-center pt-1" *ngFor="let song of cleanSongs">
               {{song}}
             </div>
 
@@ -33,7 +33,42 @@
   <div class="row">
     <div class="col">
 
-      <div class="song-list luku-text text-center" *ngFor="let song of bawdySongs">
+      <div class="song-list luku-text text-center pt-1" *ngFor="let song of bawdySongs">
+        {{song}}
+      </div>
+
+    </div>
+
+  </div>
+  <br><br>
+
+  <div class="row">
+    <div class="col">
+      <h1 class="h3 text-center">Stories</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+
+      <div class="song-list luku-text text-center pt-1" *ngFor="let song of stories">
+        {{song}}
+      </div>
+
+    </div>
+
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="col">
+      <h1 class="h3 text-center">Kids Songs</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+
+      <div class="song-list luku-text text-center pt-1" *ngFor="let song of kidsSongs">
         {{song}}
       </div>
 
@@ -42,53 +77,4 @@
   </div>
 
 
-
 </div>
-<!--<div class="mobile-pad container-fluid">-->
-
-<!--  <div class="row">-->
-<!--    <div class="col">-->
-<!--      <h1 class="h1 text-center">Songlist</h1>-->
-<!--    </div>-->
-<!--  </div>-->
-
-<!--  <div class="row justify-content-center">-->
-
-<!--      <h1 class="h3 text-center">Clean Songs</h1>-->
-
-<!--  </div>-->
-
-<!--    <div class="row justify-content-center">-->
-
-
-<!--      <ul class="song-list">-->
-<!--        <li class="text-center" *ngFor="let song of cleanSongs">{{song}}</li>-->
-<!--      </ul>-->
-
-
-
-
-<!--  </div>-->
-
-<!--  <div class="row justify-content-center">-->
-
-<!--    <h1 class="h3 text-center">Bawdy Songs</h1>-->
-
-<!--  </div>-->
-
-<!--  <div class="row justify-content-center">-->
-
-
-<!--    <ul class="song-list">-->
-<!--      <li class="text-center luku-text" *ngFor="let song of bawdySongs">{{song}}</li>-->
-<!--    </ul>-->
-
-
-
-
-<!--  </div>-->
-
-
-
-
-<!--</div>-->
