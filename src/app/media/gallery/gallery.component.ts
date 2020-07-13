@@ -47,6 +47,20 @@ export class GalleryComponent implements OnInit {
 
   ];
 
+  public khrf20 = [
+    {url: '../../assets/images/galleries/khrf2020/khrf2020_1.jpg'},
+    {url: '../../assets/images/galleries/khrf2020/khrf2020_2.jpg'},
+    {url: '../../assets/images/galleries/khrf2020/khrf2020_3.jpg'},
+    {url: '../../assets/images/galleries/khrf2020/khrf2020_4.jpg'},
+    {url: '../../assets/images/galleries/khrf2020/khrf2020_5.jpg'},
+    {url: '../../assets/images/galleries/khrf2020/khrf2020_6.jpg'},
+    {url: '../../assets/images/galleries/khrf2020/khrf2020_7.jpg'},
+    {url: '../../assets/images/galleries/khrf2020/khrf2020_8.jpg'},
+    {url: '../../assets/images/galleries/khrf2020/khrf2020_9.jpg'},
+    {url: '../../assets/images/galleries/khrf2020/khrf2020_10.jpg'},
+  ]
+  ;
+
   public galleryName ='';
 
   public activeGallery;
@@ -64,6 +78,11 @@ export class GalleryComponent implements OnInit {
     if(gallery === 'khrf19' ){
       this.activeGallery = this.khrf19;
       this.galleryName = "Kentucky Highland Renaissance Festival 2019";
+    }
+
+    if(gallery === 'khrf20' ){
+      this.activeGallery = this.khrf20;
+      this.galleryName = "Kentucky Highland Renaissance Festival 2020";
     }
 
     console.log('GALLERY IS', this.activeGallery);
