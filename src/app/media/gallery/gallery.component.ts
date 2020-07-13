@@ -44,6 +44,7 @@ export class GalleryComponent implements OnInit {
     {url: '../../assets/images/galleries/khrf2019/luku23_khrf19.jpg'},
     {url: '../../assets/images/galleries/khrf2019/luku24_khrf19.jpg'},
     {url: '../../assets/images/galleries/khrf2019/luku25_khrf19.jpg'},
+    {url: '../../assets/images/galleries/khrf2019/luku26_khrf19.jpg'},
 
   ];
 
