@@ -60,6 +60,7 @@ export class GalleryComponent implements OnInit {
     {url: '../../assets/images/galleries/khrf2020/khrf2020_9.jpg'},
     {url: '../../assets/images/galleries/khrf2020/khrf2020_10.jpg'},
     {url: '../../assets/images/galleries/khrf2020/khrf2020_11.jpg'},
+    {url: '../../assets/images/galleries/khrf2020/khrf2020_12.jpg'},
   ]
   ;
 
