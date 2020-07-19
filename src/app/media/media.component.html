@@ -5,38 +5,49 @@
   </div>
 
 
+<!--  <div class="row justify-content-center">-->
+<!--    <h3 class="h3">Social Media</h3>-->
+<!--  </div>-->
 
-    <div class="row justify-content-center">
-        <h3 class="h3">Soundcloud</h3>
-    </div>
+<!--  <div class="row justify-content-center">-->
 
-    <div class="row justify-content-center">
+<!--    <div *ngFor="let socMed of socialMedia">-->
+<!--      <a href="{{socMed.url}}"><i class="fab {{socMed.faIcon}} fa-4x p-2 fa-coloring"></i></a>-->
+<!--    </div>-->
 
-      <iframe width="50%" height="500" scrolling="no" frameborder="no" allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/647968941&color=%231200ff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-    </div>
+<!--  </div>-->
+<br>
+  <div class="row justify-content-center">
+    <h3 class="h3">Soundcloud</h3>
+  </div>
+
+  <div class="row justify-content-center">
+
+    <iframe width="50%" height="500" scrolling="no" frameborder="no" allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/647968941&color=%231200ff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+  </div>
 
 
-    <div class="pt-5 row justify-content-center">
-        <h3 class="h3">Image Galleries</h3>
-    </div>
+  <div class="pt-5 row justify-content-center">
+    <h3 class="h3">Image Galleries</h3>
+  </div>
 
 
   <div class="col pt-3">
 
 
-<!--    <div  *ngFor="let thumb of galleryThumbs">-->
+    <!--    <div  *ngFor="let thumb of galleryThumbs">-->
 
-<!--    <div class="col d-flex justify-content-center">-->
-<!--      <img src="{{thumb.url}}" alt="{{thumb.name}}" class="thumb-image">-->
-<!--    </div>-->
+    <!--    <div class="col d-flex justify-content-center">-->
+    <!--      <img src="{{thumb.url}}" alt="{{thumb.name}}" class="thumb-image">-->
+    <!--    </div>-->
 
 
-<!--    <div class="col">-->
-<!--      <a [routerLink]="['/media/gallery/', thumb.link]">  <h3 class="h3 gallery-header"><p class="album-name text-center">{{thumb.name}}</p></h3></a>-->
-<!--    </div>-->
+    <!--    <div class="col">-->
+    <!--      <a [routerLink]="['/media/gallery/', thumb.link]">  <h3 class="h3 gallery-header"><p class="album-name text-center">{{thumb.name}}</p></h3></a>-->
+    <!--    </div>-->
 
-<!--    </div>-->
+    <!--    </div>-->
 
 
     <div class="row">
@@ -45,24 +56,24 @@
 
 
 
-        <div class="row pb-5">
+      <div class="row pb-5">
 
-          <div *ngFor="let thumb of galleryThumbs" class="col-md pt-3">
+        <div *ngFor="let thumb of galleryThumbs" class="col-md pt-3">
 
-            <div class="col">
-              <a [routerLink]="['/media/gallery/', thumb.link]" class="gallery-link"><p class="album-name text-center h3 gallery-header">{{thumb.name}}</p></a>
-            </div>
-            <a [routerLink]="['/media/gallery/', thumb.link]">
+          <div class="col">
+            <a [routerLink]="['/media/gallery/', thumb.link]" class="gallery-link"><p class="album-name text-center h3 gallery-header">{{thumb.name}}</p></a>
+          </div>
+          <a [routerLink]="['/media/gallery/', thumb.link]">
             <div class="col d-flex justify-content-center">
               <img src="{{thumb.url}}" alt="{{thumb.name}}" class="thumb-image">
             </div>
-            </a>
+          </a>
 
 
-
-          </div>
 
         </div>
+
+      </div>
 
 
 

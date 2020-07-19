@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {faFacebook} from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-media',
@@ -6,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./media.component.scss']
 })
 export class MediaComponent implements OnInit {
+
+  // public socialMedia = [
+  //   {name: 'facebook', url: 'https://www.facebook.com/LukuTheMad', faIcon: 'fa-facebook'},
+  //   {name: 'instagram', url: 'https://www.instagram.com/lukuthemad/', faIcon: 'fa-instagram'},
+  //
+  // ];
 
   public galleryThumbs = [
     {name: 'Kentucky Highland Renaissance Festival 2020', url: '../../assets/images/galleries/thumbs/khrf2020_thumb.jpg', link: 'khrf20'},

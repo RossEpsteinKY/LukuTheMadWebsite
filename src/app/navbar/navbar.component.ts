@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  public socialMedia = [
+    {name: 'facebook', url: 'https://www.facebook.com/LukuTheMad', faIcon: 'fa-facebook'},
+    {name: 'instagram', url: 'https://www.instagram.com/lukuthemad/', faIcon: 'fa-instagram'},
+
+  ];
+
   constructor() { }
 
   ngOnInit() {
