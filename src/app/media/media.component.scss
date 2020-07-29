@@ -1,3 +1,23 @@
 .thumb-image {
-  max-width: 50%;
+  max-width: 75%;
+}
+
+
+
+.container {
+  padding-bottom: 10px;
+}
+
+.thumb-image {
+  border: solid;
+  border-width: 2px;
+  border-color: black;
+  box-shadow: 0px 0px 15px black;
+
+}
+
+.gallery-container:hover .thumb-image {
+  opacity: 0.9;
+  box-shadow: 0px 0px 12px darkblue;
+
 }
