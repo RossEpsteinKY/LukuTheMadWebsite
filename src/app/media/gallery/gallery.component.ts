@@ -87,6 +87,22 @@ export class GalleryComponent implements OnInit {
     {url: '../../assets/images/galleries/khrf2020/khrf2020_31.jpeg'},
     {url: '../../assets/images/galleries/khrf2020/khrf2020_32.jpeg'},
     {url: '../../assets/images/galleries/khrf2020/khrf2020_33.jpeg'},
+    {url: '../../assets/images/galleries/khrf2020/khrf2020_34.jpg'},
+    {url: '../../assets/images/galleries/khrf2020/khrf2020_35.jpg'},
+    {url: '../../assets/images/galleries/khrf2020/khrf2020_36.jpg'},
+    {url: '../../assets/images/galleries/khrf2020/khrf2020_37.jpg'},
+    {url: '../../assets/images/galleries/khrf2020/khrf2020_38.jpg'},
+    {url: '../../assets/images/galleries/khrf2020/khrf2020_39.jpg'},
+    {url: '../../assets/images/galleries/khrf2020/khrf2020_40.jpg'},
+    {url: '../../assets/images/galleries/khrf2020/khrf2020_41.jpg'},
+    {url: '../../assets/images/galleries/khrf2020/khrf2020_42.jpg'},
+    {url: '../../assets/images/galleries/khrf2020/khrf2020_43.jpeg'},
+    {url: '../../assets/images/galleries/khrf2020/khrf2020_44.jpeg'},
+    {url: '../../assets/images/galleries/khrf2020/khrf2020_45.jpeg'},
+    {url: '../../assets/images/galleries/khrf2020/khrf2020_46.jpeg'},
+    {url: '../../assets/images/galleries/khrf2020/khrf2020_47.jpeg'},
+    {url: '../../assets/images/galleries/khrf2020/khrf2020_48.jpeg'},
+
   ]
   ;
 
