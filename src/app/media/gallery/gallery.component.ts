@@ -10,6 +10,12 @@ export class GalleryComponent implements OnInit {
 
   constructor(public route: ActivatedRoute) { }
 
+  public rh2021 = [
+    {url: '../../assets/images/galleries/rh2021/Luku_Robinhood_2021_1.jpg'},
+    {url: '../../assets/images/galleries/rh2021/Luku_Robinhood_2021_2.jpg'},
+    {url: '../../assets/images/galleries/rh2021/Luku_Robinhood_2021_3.jpg'},
+  ];
+
   public irf2019 = [
     {url: '../../assets/images/galleries/irf2019/irf19_luku1.jpg'},
     {url: '../../assets/images/galleries/irf2019/irf19_luku2.jpg'},
@@ -145,7 +151,11 @@ export class GalleryComponent implements OnInit {
       this.galleryName = "Kentucky Highland Renaissance Festival 2020";
     }
 
-    console.log('GALLERY IS', this.activeGallery);
+    if(gallery === 'robinct2021' ){
+      this.activeGallery = this.rh2021;
+      this.galleryName = "Robnin Hood's Faire 2021";
+    }
+    // console.log('GALLERY IS', this.activeGallery);
 
 
   }
