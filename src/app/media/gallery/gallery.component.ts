@@ -14,6 +14,10 @@ export class GalleryComponent implements OnInit {
     {url: '../../assets/images/galleries/rh2021/Luku_Robinhood_2021_1.jpg'},
     {url: '../../assets/images/galleries/rh2021/Luku_Robinhood_2021_2.jpg'},
     {url: '../../assets/images/galleries/rh2021/Luku_Robinhood_2021_3.jpg'},
+    {url: '../../assets/images/galleries/rh2021/Luku_Robinhood_2021_4.jpg'},
+    {url: '../../assets/images/galleries/rh2021/Luku_Robinhood_2021_5.jpg'},
+    {url: '../../assets/images/galleries/rh2021/Luku_Robinhood_2021_6.jpg'},
+    {url: '../../assets/images/galleries/rh2021/Luku_Robinhood_2021_7.jpg'},
   ];
 
   public irf2019 = [
