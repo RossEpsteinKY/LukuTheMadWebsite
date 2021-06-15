@@ -10,6 +10,27 @@ export class GalleryComponent implements OnInit {
 
   constructor(public route: ActivatedRoute) { }
 
+  public khrf2021 = [
+    {url: '../../assets/images/galleries/khrf2021/Luku_Khrf_2021_1.jpg'},
+    {url: '../../assets/images/galleries/khrf2021/Luku_Khrf_2021_2.jpg'},
+    {url: '../../assets/images/galleries/khrf2021/Luku_Khrf_2021_3.jpg'},
+    {url: '../../assets/images/galleries/khrf2021/Luku_Khrf_2021_4.jpg'},
+    {url: '../../assets/images/galleries/khrf2021/Luku_Khrf_2021_5.jpg'},
+    {url: '../../assets/images/galleries/khrf2021/Luku_Khrf_2021_6.jpg'},
+    {url: '../../assets/images/galleries/khrf2021/Luku_Khrf_2021_7.jpg'},
+    {url: '../../assets/images/galleries/khrf2021/Luku_Khrf_2021_8.jpg'},
+    {url: '../../assets/images/galleries/khrf2021/Luku_Khrf_2021_9.jpg'},
+    {url: '../../assets/images/galleries/khrf2021/Luku_Khrf_2021_10.jpg'},
+    {url: '../../assets/images/galleries/khrf2021/Luku_Khrf_2021_11.jpg'},
+    {url: '../../assets/images/galleries/khrf2021/Luku_Khrf_2021_12.jpg'},
+    {url: '../../assets/images/galleries/khrf2021/Luku_Khrf_2021_13.jpg'},
+    {url: '../../assets/images/galleries/khrf2021/Luku_Khrf_2021_14.jpg'},
+    {url: '../../assets/images/galleries/khrf2021/Luku_Khrf_2021_15.jpg'},
+    {url: '../../assets/images/galleries/khrf2021/Luku_Khrf_2021_16.jpg'},
+    {url: '../../assets/images/galleries/khrf2021/Luku_Khrf_2021_17.jpg'},
+
+  ];
+
   public rh2021 = [
     {url: '../../assets/images/galleries/rh2021/Luku_Robinhood_2021_1.jpg'},
     {url: '../../assets/images/galleries/rh2021/Luku_Robinhood_2021_2.jpg'},
@@ -157,7 +178,12 @@ export class GalleryComponent implements OnInit {
 
     if(gallery === 'robinct2021' ){
       this.activeGallery = this.rh2021;
-      this.galleryName = "Robnin Hood's Faire 2021";
+      this.galleryName = "Robin Hood's Faire 2021";
+    }
+
+    if(gallery === 'khrf2021' ){
+      this.activeGallery = this.khrf2021;
+      this.galleryName = "Kentucky Highland Renaissance Festival 2021";
     }
     // console.log('GALLERY IS', this.activeGallery);
 
