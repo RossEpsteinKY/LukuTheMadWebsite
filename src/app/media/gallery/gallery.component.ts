@@ -28,6 +28,12 @@ export class GalleryComponent implements OnInit {
     {url: '../../assets/images/galleries/khrf2021/Luku_Khrf_2021_15.jpg'},
     {url: '../../assets/images/galleries/khrf2021/Luku_Khrf_2021_16.jpg'},
     {url: '../../assets/images/galleries/khrf2021/Luku_Khrf_2021_17.jpg'},
+    {url: '../../assets/images/galleries/khrf2021/Luku_Khrf_2021_18.jpg'},
+    {url: '../../assets/images/galleries/khrf2021/Luku_Khrf_2021_19.jpg'},
+    {url: '../../assets/images/galleries/khrf2021/Luku_Khrf_2021_20.jpg'},
+    {url: '../../assets/images/galleries/khrf2021/Luku_Khrf_2021_21.jpg'},
+    {url: '../../assets/images/galleries/khrf2021/Luku_Khrf_2021_22.jpg'},
+    // {url: '../../assets/images/galleries/khrf2021/Luku_and_Ulfhedinn_Immigrant_Song.mp4'},
 
   ];
 
