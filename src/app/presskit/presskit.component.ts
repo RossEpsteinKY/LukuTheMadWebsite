@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PresskitComponent implements OnInit {
 
+  public mainPhoto = '../assets/images/promo/luku_promo_1.jpg';
+
   public promoPhotos = [
     {url: '../assets/images/promo/luku_promo_1.jpg'},
     {url: '../assets/images/promo/luku_promo_2.jpg'},
@@ -20,7 +22,7 @@ export class PresskitComponent implements OnInit {
     {url: '../assets/images/promo/luku_promo_10.jpg'},
     {url: '../assets/images/promo/luku_promo_logo.png'},
     {url: '../assets/images/promo/luku_promo_logo_small.png'},
-  ]
+  ];
 
   constructor() { }
 
