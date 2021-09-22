@@ -31,9 +31,10 @@ export class EventsComponent implements OnInit {
 
 
 
-    this.httpClient.get<any>('https://www.googleapis.com/calendar/v3/calendars/vcjolj9j5oq560bp0mtgqi0jio%40group.calendar.google.com/events?timeMin='
+    this.httpClient.get<any>('https://www.googleapis.com/calendar/v3/calendars/vcjolj9j5oq560bp0mtgqi0jio%40group.calendar.google.com/events?' +
+      'orderBy=startTime&singleEvents=true&timeMin='
       +  currentDate +
-      '&key=AIzaSyAKsCTnOf4cXLDDRWzjkngCqie1o0rYXu0').subscribe(response => {
+      '&showDeleted=false&key=AIzaSyAKsCTnOf4cXLDDRWzjkngCqie1o0rYXu0').subscribe(response => {
       console.log(response.items);
       this.events = response.items;
     });
