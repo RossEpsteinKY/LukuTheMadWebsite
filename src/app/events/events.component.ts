@@ -26,15 +26,16 @@ export class EventsComponent implements OnInit {
   getEvents() {
 
     let currentDate = new Date().toISOString();
-    const cValue = formatDate(currentDate, 'yyyy-MM-dd', 'en-US');
     console.log(currentDate);
 
 
 
 
-    this.httpClient.get<any>('https://www.googleapis.com/calendar/v3/calendars/vcjolj9j5oq560bp0mtgqi0jio%40group.calendar.google.com/events?timeMin=' +  currentDate + '&key=AIzaSyAKsCTnOf4cXLDDRWzjkngCqie1o0rYXu0').subscribe(response => {
-      console.log(response);
-      this.events = response;
+    this.httpClient.get<any>('https://www.googleapis.com/calendar/v3/calendars/vcjolj9j5oq560bp0mtgqi0jio%40group.calendar.google.com/events?timeMin='
+      +  currentDate +
+      '&key=AIzaSyAKsCTnOf4cXLDDRWzjkngCqie1o0rYXu0').subscribe(response => {
+      console.log(response.items);
+      this.events = response.items;
     });
   }
 
