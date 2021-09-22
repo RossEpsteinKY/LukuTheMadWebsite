@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+import * as events from 'events';
+import {formatDate} from '@angular/common';
 
 
 @Component({
@@ -9,11 +12,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventsComponent implements OnInit {
 
-  constructor() { }
+  events: Event[];
+  constructor(
+    private httpClient: HttpClient,
+  ) { }
 
   ngOnInit() {
+    this.getEvents();
+
+    console.log(this.events);
+  }
+
+  getEvents() {
+
+    let currentDate = new Date().toISOString();
+    const cValue = formatDate(currentDate, 'yyyy-MM-dd', 'en-US');
+    console.log(currentDate);
 
 
+
+
+    this.httpClient.get<any>('https://www.googleapis.com/calendar/v3/calendars/vcjolj9j5oq560bp0mtgqi0jio%40group.calendar.google.com/events?timeMin=' +  currentDate + '&key=AIzaSyAKsCTnOf4cXLDDRWzjkngCqie1o0rYXu0').subscribe(response => {
+      console.log(response);
+      this.events = response;
+    });
   }
 
 }

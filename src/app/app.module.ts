@@ -15,6 +15,7 @@ import { ContactComponent } from './contact/contact.component';
 import { EventsComponent } from './events/events.component';
 import { PresskitComponent } from './presskit/presskit.component';
 import { SonglistComponent } from './songlist/songlist.component';
+import {HttpClientModule} from '@angular/common/http';
 
 
 
@@ -39,6 +40,7 @@ import { SonglistComponent } from './songlist/songlist.component';
     AppRoutingModule,
     FontAwesomeModule,
     CrystalLightboxModule,
+    HttpClientModule,
 
 
 
