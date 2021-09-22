@@ -1,25 +1,9 @@
-//.mobile-events{display: none}
-//.desktop-events{display: block}
-//@media only screen and (max-width: 900px) {
-//  /* For tablets: */
-//
-//  .mobile-pad{padding-top: 100px;}
-//  .mobile-events{display: block}
-//  .desktop-events{display: none}
-//
-//
-//
-//}
-//
-//.google-calendar{
-//  border: 0;
-//  width: 100%;
-//  height:600px;
-//  justify-content:center;
-//}
-//
+
 .event-card {
-  background-color: #eeeeee;
+  //background-color: #eeeeee;
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #abaffd 50%, #a9a9a9 100%);
+  text-shadow: 2px 2px #cbcbcb;
   padding-top: 2rem;
   margin-bottom: 2rem;
   padding-bottom: 2rem;
@@ -29,9 +13,12 @@
   border: 5px solid black;
   box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
 }
-
+h2 {
+  font-family: Ringbearer;
+}
 .event-card h2, h3, h4,  {
   text-align: center;
+  color: #001d62;
 
 
 }
