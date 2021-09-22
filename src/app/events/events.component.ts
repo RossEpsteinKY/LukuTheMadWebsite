@@ -20,20 +20,16 @@ export class EventsComponent implements OnInit {
 
   async ngOnInit() {
     await this.getEvents();
-
-    console.log(this.events);
   }
 
   async getEvents() {
 
     let currentDate = new Date().toISOString();
-    console.log(currentDate);
 
     this.httpClient.get<any>('https://www.googleapis.com/calendar/v3/calendars/vcjolj9j5oq560bp0mtgqi0jio%40group.calendar.google.com/events?' +
       'orderBy=startTime&singleEvents=true&timeMin='
       +  currentDate +
       '&showDeleted=false&key=' + environment.apiKey).subscribe(response => {
-      console.log(response.items);
       this.events = response.items;
     });
   }

@@ -229,9 +229,6 @@ export class GalleryComponent implements OnInit {
       this.activeGallery = this.khrf2021;
       this.galleryName = "Kentucky Highland Renaissance Festival 2021";
     }
-    // console.log('GALLERY IS', this.activeGallery);
-
-
   }
 
 }
