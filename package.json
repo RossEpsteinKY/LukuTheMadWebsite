@@ -33,7 +33,7 @@
     "mdbootstrap": "^4.14.1",
     "ngx-facebook": "^3.0.0-0",
     "node-fetch": "^3.0.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "popper.js": "^1.16.1",
     "rxjs": "~6.3.3",
     "zone.js": "~0.8.26"
